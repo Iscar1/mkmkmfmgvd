@@ -19,5 +19,5 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keepclassmembernames class io.netty.** { *; }
--keepclassmembers class org.jctools.** { *; }
+-keepclassmembernames class io.netty.** { *; }                    //mqtt
+-keepclassmembers class org.jctools.** { *; }                     // mqttt
