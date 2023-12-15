@@ -19,7 +19,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = true
+            isMinifyEnabled = true                                        //mqttt
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -30,6 +30,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+                                                                      //mqttt de la linea 35 a 39
+
     packagingOptions {
         resources {
             excludes += listOf("META-INF/INDEX.LIST", "META-INF/io.netty.versions.properties")
@@ -51,6 +54,6 @@ dependencies {
 
     implementation("com.google.firebase:firebase-firestore:24.9.1")
 
-    implementation("com.hivemq:hivemq-mqtt-client:1.3.0")
+    implementation("com.hivemq:hivemq-mqtt-client:1.3.0")                                //mqtt
 
 }
